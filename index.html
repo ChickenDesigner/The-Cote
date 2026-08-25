@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Cote — a pigeon genetics game</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app">
+  <header id="topbar"></header>
+
+  <nav id="nav">
+    <button data-screen="loft">🏠 Loft</button>
+    <button data-screen="explore">🧭 Explore</button>
+    <button data-screen="farm">🌱 Farm</button>
+    <button data-screen="shop">🛒 Shop</button>
+    <button id="btn-inv">🎒 Inventory</button>
+    <a id="btn-gallery" class="nav-minor" href="gallery.html"
+       title="Every plumage variant the game can draw">🎨 Gallery</a>
+    <button id="btn-reset" class="nav-minor" title="Erase this save and start again">New loft</button>
+  </nav>
+
+  <main id="screen"></main>
+
+  <footer id="foot">
+    <span>Right-click a pigeon to open its page · <kbd>I</kbd> toggles the inventory · <kbd>Esc</kbd> closes things</span>
+    <span><a href="gallery.html">Plumage gallery</a> · genetics model documented in <code>GENETICS.md</code></span>
+  </footer>
+</div>
+
+<div id="inv-overlay" class="hidden"></div>
+<div id="modal" class="hidden"></div>
+<div id="confirm" class="hidden"></div>
+<div id="held" class="hidden"></div>
+<div id="toast-wrap"></div>
+
+<script src="js/names.js"></script>
+<script src="js/genetics.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/state.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
